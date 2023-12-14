@@ -24,7 +24,7 @@
              fail:
                msg: "Ansible has detected this host is not part of the Debian family."
              when: ansible_os_family != "Debian"
-
+  
       rescue:
            - name: PRECHECK PHASE - FAILED
              fail:
